@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE SLIDER</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+        }
+        h1{
+            color:rgb(3, 13, 34);
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 5px rgb(1, 238, 255);
+        } 
+        #container{
+            width:70%;
+            height:600px;
+            margin:auto;
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 2px 2px 10px 10px rgb(0, 174, 255);
+            border-radius: 10px;
+            background: url("bg.png");
+            background-size: 100% 100%;
+        }
+        #slider{
+            width:1000%;
+            margin:0;
+            padding: 0;
+            position: relative;
+            display: flex;
+            animation: slideshow 258s infinite linear;
+        }
+        img{
+            width:10%;
+            border: 2px solid cyan;
+            border-radius: 10px;
+            padding: 0;
+            margin: 0;
+        }
+        @keyframes slideshow{
+            0%{
+                left:0;
+            }
+            10%{
+                left:-100%;
+            }
+            20%{
+                left:-200%;
+            }
+            30%{
+                left:-300%;
+            }
+            40%{
+                left:-400%;
+            }
+            50%{
+                left:-500%;
+            }
+            60%{
+                left:-600%;
+            }
+            70%{
+                left:-700%;
+            }
+            80%{
+                left:-800%;
+            }
+            90%{
+                left:-900%;
+            }
+            100%{
+                left:-1000%;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>COLLEGE PICNIC MEMORIES</h1>
+    <div id="container">
+        <div id="slider">
+            <img src="image1.jpg" alt="NOT SUPPORTED" id="image1" height="600px">
+            <img src="image2.jpg" alt="NOT SUPPORTED" id="image2" height="600px">
+            <img src="image3.jpg" alt="NOT SUPPORTED" id="image3" height="600px">
+            <img src="image4.jpg" alt="NOT SUPPORTED" id="image4" height="600px">
+            <img src="image5.jpg" alt="NOT SUPPORTED" id="image5" height="600px">
+            <img src="image6.jpg" alt="NOT SUPPORTED" id="image6" height="600px">
+            <img src="image7.jpg" alt="NOT SUPPORTED" id="image7" height="600px">
+            <img src="image8.jpg" alt="NOT SUPPORTED" id="image8" height="600px">
+            <img src="image9.jpg" alt="NOT SUPPORTED" id="image9" height="600px">
+            <img src="image10.jpg" alt="NOT SUPPORTED" id="image10" height="600px">
+        </div>
+    </div>
+    <div id="music">
+        <audio loop autoplay>
+            <source src="Woh Din - Arijit Singh Version.mp3">
+        </audio>
+    </div>
+</body>
+</html>
